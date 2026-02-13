@@ -41,8 +41,8 @@ body {
 }
 
 .letter-window{
-    width: 90vw;
-    max-width: 800px;
+    width: 200vw;
+    max-width: 1300px;
     aspect-ratio: 3/2;
     padding: 20px 20px 0 20px;
     display: flex;
@@ -86,7 +86,7 @@ p {
 }
 
 .letter-window.final .cat {
-    width: 180px;
+    width: 350px;
 }
 
 /* buttons */

@@ -9,6 +9,10 @@ const catImg = document.getElementById("letter-cat");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
 
+const bgMusic = new Audio("sounds/Download.mp3"); 
+bgMusic.loop = true;      // que se repita
+bgMusic.volume = 0.4;     // volumen suave (0 a 1)
+
 // Click Envelope
 
 envelope.addEventListener("click", () => {
@@ -60,6 +64,7 @@ noBtn.addEventListener("mouseover", () => {
 // YES is clicked
 
 yesBtn.addEventListener("click", () => {
+
     title.textContent = "Yippeeee!";
 
     catImg.src = "cat_dance.gif";
@@ -69,4 +74,7 @@ yesBtn.addEventListener("click", () => {
     buttons.style.display = "none";
 
     finalText.style.display = "block";
+
+    // 🎶 Iniciar música de fondo
+    bgMusic.play();
 });
